@@ -1,0 +1,233 @@
+@media print {
+    .table, .table__body {
+     overflow: visible;
+     height: auto !important;
+     width: auto !important;
+    }
+   }
+
+   
+   main.table {
+       height: 100vh;
+       position: relative;
+   }
+   
+   
+   h1{
+       font-weight: 500;
+   }
+   
+   .table__header {
+       width: 100%;
+       height: 10%;
+       background-color: #fff4;
+       padding: .8rem 1rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .table__body {
+       width: 95%;
+       max-height: calc(89% - 1.6rem);
+       background-color: #fffb;
+       
+       margin: .8rem auto;
+       overflow: hidden;
+       overflow-y: scroll;
+       
+       
+   }
+   
+   .table__header .input-group {
+       width: 35%;
+       height: 100%;
+       background-color: #fff5;
+       padding: 0 .8rem;
+       border-radius: 2rem;
+       border: 1px solid #d4d4d4;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   
+       transition: .2s;
+   }
+   
+   .table__header .input-group:hover {
+       width: 45%;
+       background-color: #fff8;
+       box-shadow: 0 .1rem .4rem #0002;
+   }
+   
+   .table__header .input-group img {
+       width: 1rem;
+       height: 1rem;
+   }
+   
+   .table__header .input-group input {
+       width: 100%;
+       padding: 0 .5rem 0 .3rem;
+       background-color: transparent;
+       border: none;
+       outline: none;
+   }
+   
+   
+   .table__body::-webkit-scrollbar{
+       width: 0.5rem;
+       height: 0.5rem;
+   }
+   
+   .table__body::-webkit-scrollbar-thumb{
+       border-radius: .5rem;
+       background-color: #0004;
+       visibility: hidden;
+   }
+   
+   .table__body:hover::-webkit-scrollbar-thumb{ 
+       visibility: visible;
+   }
+   
+   
+   table {
+       width: 100%;
+   }
+   
+   table, th, td {
+       border-collapse: collapse;
+       padding: 1rem;
+       text-align: left;
+       border-bottom: 1px solid #dadada;
+       font-size: 12px;
+   }
+   
+   .delete{
+       gap: 0.2rem;
+       color: #8a0000;
+       padding: 0.2rem;
+       background: #ffb9b9;
+       border-radius: 12px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+   }
+   
+   .edit span{
+       font-size: 18px;
+   }
+   .delete span{
+       font-size: 15px;
+   }
+   
+   .edit{
+       cursor: pointer;
+       gap: 0.2rem;
+       color: #005c00;
+       padding: 0.2rem;
+       background: #b9ffb9;
+       border-radius: 12px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .addUserButton button{
+       padding: 0.5rem 0.8rem;
+       border-radius: 10px;
+       border: none;
+       gap: 0.5rem;
+       cursor: pointer;
+       font-weight: 600;
+       font-size: 12px;
+       background: #00b3ff;
+       color: #ebf9ff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .no-records{
+    text-align: center;
+    font-size: 15px; 
+   }
+
+   .button-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+   }
+
+   .btn{
+       padding: 0.5rem 0.8rem;
+       border-radius: 10px;
+       border: none;
+       gap: 0.5rem;
+       cursor: pointer;
+       font-weight: 600;
+       font-size: 12px;
+       background: #00b3ff;
+       color: #ebf9ff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   .addUserButton button span{
+       font-size: 20px !important;
+   }
+   
+   thead th {
+       position: sticky;
+       top: 0;
+       left: 0;
+       border: none;
+       background-color: #bfe3fffe;
+       font-weight: 600;
+       text-transform: capitalize;
+   }
+   
+   tbody tr:nth-child(even) {
+       background-color: #ebf9ff;
+   }
+   
+   tbody tr {
+       --delay: .1s;
+       transition: .5s ease-in-out var(--delay), background-color 0s;
+   }
+   
+   tbody tr.hide {
+       opacity: 0;
+       transform: translateX(100%);
+   }
+   
+   tbody tr:hover {
+       background-color: #f4fafffe !important;
+   }
+   
+   tbody tr td,
+   tbody tr td p{
+       transition: .2s ease-in-out;
+   }
+   
+   tbody tr.hide td,
+   tbody tr.hide td p {
+       padding: 0;
+       font: 0 / 0 sans-serif;
+       transition: .2s ease-in-out .5s;
+   }
+   
+   a{
+       text-decoration: underline;
+       color: rgb(25, 0, 255);
+       cursor: pointer;
+   }
+   
+   
+   @media (max-width: 1000px) {
+       td:not(:first-of-type) {
+           min-width: 12.1rem;
+       }
+   }
+   
+   
